@@ -1,0 +1,20 @@
+.rsepro_attendees {
+	list-style: none outside none !important;
+	width: 100%;
+	margin: 0;
+}
+
+.rsepro_attendees li {
+	overflow: hidden;
+    text-align: center;
+    width: 33%;
+	float:left;
+}
+
+.attendees_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+}

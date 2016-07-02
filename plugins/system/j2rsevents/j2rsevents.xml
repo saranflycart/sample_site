@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>J2store Rsevents plugin</name>
+	<author>Alagesan</author>
+	<creationDate>JUN 2016</creationDate>
+	<copyright>(C) 2016 http://j2store.org</copyright>
+	<license>GNU General Public License v3 or later versions</license>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>www.j2store.org</authorUrl>
+	<version>1.0</version>
+	<description>System plugin that integrates RSEvents Pro with J2Store. If you disable this plugin,
+	events in the RS Events will not be treated as products.</description>
+	<files>
+		<filename plugin="j2rsevents">j2rsevents.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+	</files>
+</extension>

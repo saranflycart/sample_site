@@ -1,0 +1,22 @@
+.rse_popular_list {
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.rse_popular_list .rs_box {
+	margin-bottom: 5px;
+	padding:8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background:#F5F5F5;
+	border:5px solid #E3E3E3;
+}
+
+.rse_popular_list .rs_box span {
+	display: block;
+	font-weight: bold;
+    text-align: center;
+    width: 100%;
+}

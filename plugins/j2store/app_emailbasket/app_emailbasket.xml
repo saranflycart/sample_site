@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="j2store" method="upgrade">
+	<name>EmailBasket J2Store</name>
+	<version>1.12</version>
+	<creationDate>JUN 2016</creationDate>
+	<author>Alagesan</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://www.j2store.org</authorUrl>
+	<copyright>2016 Weblogicx India Private Limited</copyright>
+	<license>GNU General Public License v3 or later versions</license>
+	<description>J2STORE_EMAILBASKET_APPLICATION_DESC</description>
+
+	<scriptfile>script.app_emailbasket.php</scriptfile>
+
+	<files>
+		<filename plugin="app_emailbasket">app_emailbasket.php</filename>
+		<filename>index.html</filename>
+		<folder>app_emailbasket</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_j2store_app_emailbasket.ini</language>
+		<language tag="en-GB">en-GB.plg_j2store_app_emailbasket.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="J2STORE_BASIC">
+				<field name="emailbasket_note" type="customnotice"
+					   label="J2STORE_EMAILBASKET_CUSTOM_NOTE"
+					   addfieldpath="/administrator/components/com_j2store/models/fields"
+				/>
+				<field name="disable_checkout_btn" type="radio" default="0"
+					   class="btn-group"
+					   label="J2STORE_EMAILBASKET_DISABLE_CHECKOUT_BTN"
+					   description="J2STORE_EMAILBASKET_DISABLE_CHECKOUT_BTN_DESC">
+					<option value="0">JNo</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="show_save_cart" type="radio" default="0"
+					   class="btn-group"
+					   label="J2STORE_EMAILBASKET_SHOW_SAVE_CART"
+					   description="J2STORE_EMAILBASKET_SHOW_SAVE_CART_DESC">
+					<option value="0">JNo</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="send_admin_email" type="radio"  class="btn-group" default="1" label="J2STORE_EMAILBASKET_SEND_ADMIN_EMAIL" description="J2STORE_EMAILBASKET_SEND_ADMIN_EMAIL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="empty_cart" type="radio"  class="btn-group" default="1" label="J2STORE_EMAILBASKET_EMPTY_CART" description="J2STORE_EMAILBASKET_EMPTY_CART_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="empty_cart_delay" type="text" default="2000" label="J2STORE_EMAILBASKET_EMPTY_CART_DELAY" description="J2STORE_EMAILBASKET_EMPTY_CART_DELAY_DESC" />
+				<!--<field name="address_layout" class="input-xxlarge" type="textarea" rows="10" cols="70" default="[first_name] [last_name] [email] [phone_1] [phone_2] [company] [tax_number]
+		[address_1] [address_2] [city] [zip] [country_id] [zone_id]" label="J2STORE_EMAILBASKET_ADDRESS_DISPLAY_LAYOUT" description="J2STORE_EMAILBASKET_ADDRESS_DISPLAY_LAYOUT_DESC" />-->
+				<field type="textarea" name="subject" label="J2STORE_EMAILBASKET_SUBJECT" description="J2STORE_EMAILBASKET_SUBJECT_DESC" filter="safehtml" />
+				<field type="editor" name="body" label="J2STORE_EMAILBASKET_BODY" description="J2STORE_EMAILBASKET_BODY_DESC" filter="safehtml" />
+			</fieldset>
+			<fieldset name="advanced" label="J2STORE_ADVANCED" >
+				<field type="text" name="modal_box_inline_style" label="J2STORE_EMAILBASKET_MODEL_BOX_STYLE" description="J2STORE_EMAILBASKET_MODEL_BOX_STYLE_DESC" default="display:none;" />
+				<field type="text" name="modal_box_extra_class" label="J2STORE_EMAILBASKET_MODEL_BOX_EXTRA_CLASS" description="J2STORE_EMAILBASKET_MODEL_BOX_EXTRA_CLASS_DESC" default=" fade hide " />
+				<field type="textarea" name="modal_style" label="J2STORE_EMAILBASKET_MODEL_STYLE" description="J2STORE_EMAILBASKET_MODEL_STYLE_DESC" />					
+			</fieldset>
+		</fields>
+	</config>
+</extension>

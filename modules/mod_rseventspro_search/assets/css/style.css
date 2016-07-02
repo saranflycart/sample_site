@@ -1,0 +1,100 @@
+#rsepro_ajax {
+	width: 95%;
+	margin-bottom: 0;
+}
+
+.rsepro_search_ajax {
+	width: 100%;
+	position: relative;
+}
+
+.rsepro_ajax_container {
+	position: absolute;
+	width: 100%;
+}
+
+.rsepro_ajax_list {
+	list-style: none outside none !important;
+    padding: 0 !important;
+	margin: 0 !important;
+	border: 1px solid #C8C8C8;
+	background: none repeat scroll 0 0 #1E1E1E;
+	opacity: 0.75;
+	z-index: 9999;
+	width: 98%;
+	border: 1px solid transparent;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+
+.rsepro_ajax_list li a {
+	color: #FFF;
+	padding: 2px;
+	text-decoration: none !important;
+	display: block;
+}
+
+.rsepro_ajax_list li a:hover {
+	color: #FFF;
+	padding: 2px;
+	text-decoration: none !important;
+	background: none repeat scroll 0 0 transparent;
+}
+
+.rsepro_ajax_list li {
+	padding: 2px;
+}
+
+.rsepro_ajax_list .rsepro_ajax_close {
+	background: url("../../../../components/com_rseventspro/assets/images/closed.png") no-repeat scroll 0 0 transparent;
+	float: right;
+    height: 16px;
+    width: 16px;
+}
+
+.rsepro_ajax_list .rsepro_ajax_close a {
+	height: 16px;
+    width: 16px;
+}
+
+.rsepro_search_form {
+	width: 100%;
+}
+
+.rsepro_search_form p label {
+	display: block;
+	font-weight: bold;
+}
+
+.rsepro_search_form #rskeyword {
+    width: 85%;
+}
+
+.rsepro_search_form .rs_date .input-append {
+	display: inline;
+}
+
+.rsepro_search_form .rsepro_search_form_button {
+	background: url("../../../../components/com_rseventspro/assets/images/searchicon.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+	vertical-align: middle;
+	margin-left: -25px;
+}
+
+.rsepro_search_form label {
+	display: block;
+}
+
+.rsepro_search_form div {
+	margin-bottom: 5px;
+}
+
+#rsepro_ajax_loader {
+	position: absolute;
+    right: 0;
+    top: 7px;
+}

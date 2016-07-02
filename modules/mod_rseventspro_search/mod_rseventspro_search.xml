@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>MOD_RSEVENTSPRO_SEARCH</name>
+	<creationDate>20/03/2012</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>GNU General Public License</copyright>
+	<authorEmail>suport@rsjoomla.com</authorEmail>
+	<authorUrl>http://www.rsjoomla.com</authorUrl>
+	<version>1.2</version>
+	<description>MOD_RSEVENTSPRO_SEARCH_DESC</description>
+	<scriptfile>script.php</scriptfile>
+
+	<files>
+		<filename module="mod_rseventspro_search">mod_rseventspro_search.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_search.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_search.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="MOD_RSEVENTSPRO_SEARCH_CLASS_SUFFIX" description="MOD_RSEVENTSPRO_SEARCH_CLASS_SUFFIX" />
+				<field name="itemid" type="text" default="" label="MOD_RSEVENTSPRO_SEARCH_CUSTOM_ITEMID" description="MOD_RSEVENTSPRO_SEARCH_CUSTOM_ITEMID" />
+				
+				<field name="layout" type="list" default="ajax" label="MOD_RSEVENTSPRO_SEARCH_TYPE" description="MOD_RSEVENTSPRO_SEARCH_TYPE_DESC">
+					<option value="ajax">MOD_RSEVENTSPRO_SEARCH_TYPE_AJAX</option>
+					<option value="default">MOD_RSEVENTSPRO_SEARCH_TYPE_FORM</option>
+				</field>
+				
+				<field name="spacer1" type="spacer" class="text" label="MOD_RSEVENTSPRO_SEARCH_AJAX_PARAMS" />
+				<field name="links" type="list" default="0" label="MOD_RSEVENTSPRO_SEARCH_EVENTS_LINKS" description="MOD_RSEVENTSPRO_SEARCH_EVENTS_LINKS_DESC">
+					<option value="0">MOD_RSEVENTSPRO_SEARCH_EVENTS_LINKS_NEW</option>
+					<option value="1">MOD_RSEVENTSPRO_SEARCH_EVENTS_LINKS_CURRENT</option>
+				</field>
+				
+				<field name="spacer2" type="spacer" class="text" label="MOD_RSEVENTSPRO_SEARCH_FORM_PARAMS" />
+				
+				<field name="categories" type="radio" class="btn-group" default="0" label="MOD_RSEVENTSPRO_SEARCH_CATEGORIES" description="MOD_RSEVENTSPRO_SEARCH_CATEGORIES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="locations" type="radio" class="btn-group" default="0" label="MOD_RSEVENTSPRO_SEARCH_LOCATIONS" description="MOD_RSEVENTSPRO_SEARCH_LOCATIONS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="start" type="radio" class="btn-group" default="0" label="MOD_RSEVENTSPRO_SEARCH_START" description="MOD_RSEVENTSPRO_SEARCH_START_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="end" type="radio" class="btn-group" default="0" label="MOD_RSEVENTSPRO_SEARCH_END" description="MOD_RSEVENTSPRO_SEARCH_END_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="archive" type="radio" class="btn-group" default="0" label="MOD_RSEVENTSPRO_SEARCH_ARCHIVE" description="MOD_RSEVENTSPRO_SEARCH_ARCHIVE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="repeat" type="radio" class="btn-group" default="1" label="MOD_RSEVENTSPRO_SEARCH_RECURRING_EVENTS" description="MOD_RSEVENTSPRO_SEARCH_RECURRING_EVENTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
